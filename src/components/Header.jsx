@@ -58,7 +58,8 @@ const Header = () => {
                         ) : (
                             <NavLink
                                 to="/auth"
-                                className="bg-white text-indigo-600 font-medium px-4 py-2 rounded hover:bg-indigo-600 hover:text-white transition duration-300 ease-in-out"
+                                className="bg-white hidden xm:block   text-indigo-600 font-medium px-4 py-2 rounded hover:bg-indigo-600 hover:text-white transition duration-300 ease-in-out"
+                                
                             >
                                 Log in
                             </NavLink>
@@ -103,6 +104,7 @@ const Header = () => {
                                             <NavLink
                                                 to="/auth"
                                                 className="bg-white text-indigo-600 font-medium px-4 py-2 rounded hover:bg-indigo-600 hover:text-white transition duration-300 ease-in-out"
+                                                onClick={() => setMobmenu(false)}
                                             >
                                                 Log in
                                             </NavLink>

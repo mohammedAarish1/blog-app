@@ -61,22 +61,22 @@ const Auth = () => {
 
 
   return (
-    <div className='grid grid-cols-2'>
-      <div className=' flex justify-end '>
+    <div className='grid sm:grid-cols-2'>
+      <div className=' flex sm:justify-end justify-center sm:order-1 order-2'>
         <img src="https://img.freepik.com/free-photo/3d-render-secure-login-password-illustration_107791-16640.jpg?w=740&t=st=1711164554~exp=1711165154~hmac=bf56a729dfab67f878329168bb6c8f897798a190ca35e7cd2e980b882301246e" alt="" className='w-2/3' />
       </div>
-      <div className=' flex  flex-col  p-10 '>
+      <div className=' flex  flex-col  sm:p-10 p-5 order-1 sm:order-2'>
         <h1 className=' mb-4 text-2xl text-center'>{loginStatus ? "Log in" : "Sign up"}</h1>
-        <div className='border p-4 shadow-lg shadow-slate-700 '>
+        <div className='border xm:p-4 p-2 shadow-lg shadow-slate-700 '>
           <form className='flex gap-3 flex-col' onSubmit={handleSubmit}>
             {!loginStatus && (
               <>
-                <div className='flex gap-2 justify-between'>
-                  <div className='flex flex-col gap-2 w-1/2'>
+                <div className='flex sm:flex-row flex-col gap-2 justify-between'>
+                  <div className='flex flex-col gap-2 sm:w-1/2'>
                     <label htmlFor="firstname">First Name</label>
                     <input type="firstname" name='firstName' id='firstname' placeholder='Enter Your First Name' className='p-2 rounded-sm shadow-md outline-none  ' value={values.firstName} onChange={handleChange} />
                   </div>
-                  <div className='flex flex-col gap-2 w-1/2'>
+                  <div className='flex flex-col gap-2 sm:w-1/2'>
                     <label htmlFor="lastname">Last Name</label>
                     <input type="lastname" name='lastName' id='lastname' placeholder='Enter Your Last Name' className='p-2 rounded-sm shadow-md outline-none ' value={values.lastName} onChange={handleChange} />
                   </div>
